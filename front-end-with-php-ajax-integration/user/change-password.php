@@ -33,13 +33,13 @@
                     <div class="card-body">
                         <form id="change_password">
                             <div class="mb-3">
-                                <input type="password" class="form-control" placeholder="current Password" name="current_password">
+                                <input type="password" class="form-control" placeholder="Current Password" name="current_password">
                             </div>
                             <div class="mb-3">
                                 <input type="password" class="form-control" placeholder="New Password" name="new_password">
                             </div>
                             <div class="mb-3">
-                                <input type="password" class="form-control" placeholder="Conform Password" name="confirm_password">
+                                <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password">
                             </div>
                             <button type="submit" class="btn bg-gradient-dark my-4 mb-2">Change Password</button>
                         </form>
