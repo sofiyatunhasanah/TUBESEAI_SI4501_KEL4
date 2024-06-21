@@ -99,6 +99,7 @@ function Dashboard() {
                     $('#mobile').html(data.mobile ? data.mobile : 'N/A')
                     $('#email').html(data.email ? data.email : 'N/A')
                     $('#location').html(data.location ? data.location : 'N/A')
+                    $('#token').html(localStorage.getItem('access_token') ? localStorage.getItem('access_token').replace(" ","").trim() : "N/A")
 
                     if (data.email_follow_me == 1) {
                         $('#email_follow_me').prop('checked', true)

@@ -3,7 +3,7 @@
 <head>
     <?php include "../include/meta.php" ?>
     <title>
-        Dashboard
+        Profile
     </title>
     <?php include "../include/css.php" ?>
 </head>
@@ -130,7 +130,11 @@
                                 <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mobile:</strong> &nbsp; <span id="mobile"></span></li>
                                 <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Email:</strong> &nbsp; <span id="email"></span></li>
                                 <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Location:</strong> &nbsp; <span id="location"></span></li>
+                                <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">JWT Token:</strong></li>
                             </ul>
+                            <div style="border-radius:5px; color:black; background-color:#DEDFE4; padding:10px;">
+                                <p id="token" style="font-size: 0.875rem;line-height: 1.25rem;"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -141,7 +145,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Profile Headline</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -171,7 +175,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Detail Profile</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

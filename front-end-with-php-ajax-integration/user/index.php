@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
     <?php include "../include/meta.php" ?>
-    <title>
-        Dashboard
-    </title>
+    <title>Dashboard</title>
     <?php include "../include/css.php" ?>
 </head>
-<body class="g-sidenav-show  bg-gray-100">
+<body class="g-sidenav-show bg-gray-100">
 <?php include "../include/sidebar.php" ?>
-<main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+<main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg">
     <!-- Navbar -->
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
         <div class="container-fluid py-1 px-3">
@@ -20,7 +18,6 @@
     </nav>
     <!-- End Navbar -->
     <div class="container-fluid py-4">
-
         <div class="row">
             <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
                 <div class="card">
@@ -70,7 +67,7 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="numbers">
-                                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Total Complete Project</p>
+                                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Project Done</p>
                                     <h5 class="font-weight-bolder mb-0">
                                         <span id="total_complete_project">0</span>
                                     </h5>
@@ -87,11 +84,11 @@
             </div>
             <div class="col-xl-3 col-sm-6">
                 <div class="card">
-                    <div    class="card-body p-3">
+                    <div class="card-body p-3">
                         <div class="row">
                             <div class="col-8">
                                 <div class="numbers">
-                                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Total Complete Task</p>
+                                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Task Done</p>
                                     <h5 class="font-weight-bolder mb-0">
                                         <span id="total_complete_task">0</span>
                                     </h5>
@@ -131,7 +128,6 @@
                                 </tr>
                                 </thead>
                                 <tbody id="projectData">
-
                                 </tbody>
                             </table>
                         </div>
@@ -157,12 +153,11 @@
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">#</th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Task</th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Responsible User</th>
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7  text-center ps-2">Status</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 text-center ps-2">Status</th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Due Date</th>
                                 </tr>
                                 </thead>
                                 <tbody id="taskData">
-
                                 </tbody>
                             </table>
                         </div>
@@ -174,5 +169,6 @@
 </main>
 <?php include "../include/js.php" ?>
 <script src="../assets/js/custom/dashboard.js"></script>
+<script src="../assets/js/custom/task.js"></script>
 </body>
 </html>

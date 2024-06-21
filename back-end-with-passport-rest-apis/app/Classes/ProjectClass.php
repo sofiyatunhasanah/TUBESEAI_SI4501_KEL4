@@ -2,7 +2,9 @@
 
 namespace App\Classes;
 
+use App\Events\ProjectProcessed;
 use App\Models\Project;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
 class ProjectClass
@@ -31,11 +33,15 @@ class ProjectClass
     public function addProject($name, $budget, $responsible_user, $status)
     {
         try {
-            $addProduct = $this->project->addProject($name, $budget, $responsible_user, $status);
-            if ($addProduct) {
-                return response()->json(['status' => true, 'message' => 'project add success'])->setStatusCode(200);
-            }
-            return response()->json(['status' => false, 'message' => 'error while add project'])->setStatusCode(400);
+            // $addProduct = $this->project->addProject($name, $budget, $responsible_user, $status);
+            $newProject = new Project();
+            $newProject->name = $name;
+            $newProject->budget = $budget;
+            $newProject->user_id = Auth::user()->id;
+            $newProject->responsible_user = $responsible_user;
+            $newProject->status = $status;
+            event(new ProjectProcessed($newProject));
+            return response()->json(['status' => true, 'message' => 'project add success!, please wait until project created.'])->setStatusCode(200);
         } catch (\Exception $ex) {
             Log::info("ProjectClass Error", ["addProject" => $ex->getMessage(), "line" => $ex->getLine()]);
             return response()->json(['status' => false, 'message' => 'internal server error'])->setStatusCode(500);
