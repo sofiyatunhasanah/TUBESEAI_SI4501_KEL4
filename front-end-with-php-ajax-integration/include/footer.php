@@ -62,9 +62,6 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="copyright">
-				<p>Copyright © 2021 PyThru Fintech Services Private Limited</p>
-			</div>
 		</div>
 	</div>
 </footer>
